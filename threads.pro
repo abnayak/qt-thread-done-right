@@ -16,7 +16,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    worker.cpp
+    worker.cpp \
+    master.cpp
 
 HEADERS += \
-    worker.h
+    worker.h \
+    master.h

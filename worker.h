@@ -4,7 +4,7 @@
 #include <QDebug>
 #include <QThread>
 
-class Worker:public QObject
+class Worker : public QObject
 {
     Q_OBJECT
 
@@ -13,6 +13,9 @@ public:
 
 public slots:
     void start();
+
+signals:
+    void WorkerFinished();
 };
 
 #endif // WORKER_H
